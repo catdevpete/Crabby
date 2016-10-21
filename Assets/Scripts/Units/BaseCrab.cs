@@ -9,11 +9,10 @@ public class BaseCrab : MonoBehaviour
         ATTACK
     }
 
-    [SerializeField]
-    GameObject enemyBase;
-
     bool canAtt;
+    [SerializeField]
     int team;
+    [SerializeField]
     float hp;
     float att;
     float mS;
@@ -21,16 +20,21 @@ public class BaseCrab : MonoBehaviour
     float range;
     State cState;
     GameObject target;
+    [SerializeField]
+    GameObject enemyBase;
     Collider[] cols;
 
     public int GetTeam() { return team; }
     public float GetHp() { return hp; }
     
+    public void SetTeam(int _team) { team = _team; }
     public void SetHp(float _hp) { hp = _hp; }
+    public void SetEnemyBase(GameObject _enemyBase) { enemyBase = _enemyBase; }
 
     void Start()
     {
         canAtt = true;
+        att = 5;
         mS = 3;
         aS = 1;
         range = 2;

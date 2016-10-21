@@ -3,10 +3,12 @@ using System.Collections;
 
 public class CrabNest : MonoBehaviour
 {
+    int team;
     float hp;
 
     public float GetHp() { return hp; }
 
+    public void SetTeam(int _team) { team = _team; }
     public void SetHp(float _hp) { hp = _hp; }
 
     void Start()
@@ -23,8 +25,17 @@ public class CrabNest : MonoBehaviour
     {
         if (hp <= 0)
         {
+            if (team == 1)
+            {
+                GameManager.LoseTrigger();
+            }
+
+            else
+            {
+                GameManager.WinTrigger();
+            }
+
             Destroy(gameObject);
-            // GG;
         }
     }
 }

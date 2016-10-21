@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: 6f6192f8d3ce0ab4b90f19f24b08c0a0
+timeCreated: 1477090452
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: armL
+    100002: armR
+    100004: Body
+    100006: clawL
+    100008: clawR
+    100010: Claws
+    100012: ClawsOver
+    100014: //RootNode
+    100016: eyeL
+    100018: eyeR
+    100020: Eyes
+    100022: irisL
+    100024: irisR
+    100026: legLA
+    100028: legLB
+    100030: legLC
+    100032: legRA
+    100034: legRB
+    100036: legRC
+    100038: Legs
+    100040: legsL
+    100042: legsR
+    100044: Monocle
+    100046: MoustacheL
+    100048: MoustacheR
+    100050: TopHat
+    400000: armL
+    400002: armR
+    400004: Body
+    400006: clawL
+    400008: clawR
+    400010: Claws
+    400012: ClawsOver
+    400014: //RootNode
+    400016: eyeL
+    400018: eyeR
+    400020: Eyes
+    400022: irisL
+    400024: irisR
+    400026: legLA
+    400028: legLB
+    400030: legLC
+    400032: legRA
+    400034: legRB
+    400036: legRC
+    400038: Legs
+    400040: legsL
+    400042: legsR
+    400044: Monocle
+    400046: MoustacheL
+    400048: MoustacheR
+    400050: TopHat
+    2300000: armL
+    2300002: armR
+    2300004: Body
+    2300006: clawL
+    2300008: clawR
+    2300010: eyeL
+    2300012: eyeR
+    2300014: irisL
+    2300016: irisR
+    2300018: legLA
+    2300020: legLB
+    2300022: legLC
+    2300024: legRA
+    2300026: legRB
+    2300028: legRC
+    2300030: Monocle
+    2300032: MoustacheL
+    2300034: MoustacheR
+    2300036: TopHat
+    3300000: armL
+    3300002: armR
+    3300004: Body
+    3300006: clawL
+    3300008: clawR
+    3300010: eyeL
+    3300012: eyeR
+    3300014: irisL
+    3300016: irisR
+    3300018: legLA
+    3300020: legLB
+    3300022: legLC
+    3300024: legRA
+    3300026: legRB
+    3300028: legRC
+    3300030: Monocle
+    3300032: MoustacheL
+    3300034: MoustacheR
+    3300036: TopHat
+    4300000: Body
+    4300002: armL
+    4300004: clawL
+    4300006: armR
+    4300008: clawR
+    4300010: eyeL
+    4300012: irisL
+    4300014: eyeR
+    4300016: irisR
+    4300018: Monocle
+    4300020: legRA
+    4300022: legRB
+    4300024: legRC
+    4300026: legLA
+    4300028: legLB
+    4300030: legLC
+    4300032: TopHat
+    4300034: MoustacheL
+    4300036: MoustacheR
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 50
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
