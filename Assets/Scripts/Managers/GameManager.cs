@@ -4,15 +4,15 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
-	public string winScene;
-	public string loseScene;
+	public string winScene = "WinScreen";
+	public string loseScene = "LoseScreen";
 
-	public void TriggerWin()
+	public void WinTrigger()
 	{
 		SceneManager.LoadScene(winScene);
 	}
 
-	public void TriggerLose()
+	public void LoseTrigger()
 	{
 		SceneManager.LoadScene(loseScene);
 	}
