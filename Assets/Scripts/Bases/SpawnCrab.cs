@@ -22,6 +22,8 @@ public class SpawnCrab : MonoBehaviour
         if (canSpawn)
         {
             GameObject crab = Instantiate(crabPrefabs[_i], playerBase.position + Vector3.right, Quaternion.identity) as GameObject;
+            crab.GetComponent<BaseCrab>().SetEnemyBase(enemyBase.gameObject);
+            crab.GetComponent<BaseCrab>().SetTeam(1);
             StartCoroutine(SpawnCycle(_t));
         }
     }
@@ -31,6 +33,8 @@ public class SpawnCrab : MonoBehaviour
         if (canSpawn)
         {
             GameObject crab = Instantiate(crabPrefabs[_i], enemyBase.position + Vector3.left, Quaternion.identity) as GameObject;
+            crab.GetComponent<BaseCrab>().SetEnemyBase(playerBase.gameObject);
+            crab.GetComponent<BaseCrab>().SetTeam(2);
             StartCoroutine(SpawnCycle(_t));
         }
     }
