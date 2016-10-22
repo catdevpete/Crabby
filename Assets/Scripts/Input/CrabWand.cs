@@ -25,14 +25,9 @@ public class CrabWand : MonoBehaviour
 
 	void OnCollisionEnter(Collision collision)
 	{
-		if (collision.gameObject.GetComponent<BaseCrab>())
-			spawnCrab.SpawnPlayerCrab(0);
-		/*
-		if (collision.gameObject.tag == "base")
+		if (collision.gameObject.GetComponent<CrabNest>())
 		{
-			Base base = collision.gameObject.GetComponent<Base>();
-			base.Spawn();
+			spawnCrab.SpawnPlayerCrab(0, 5);
 		}
-		*/
 	}
 }

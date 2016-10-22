@@ -10,7 +10,8 @@ public class CrabNest : MonoBehaviour
     public float GetHp() { return hp; }
 
     public void SetTeam(int _team) { team = _team; }
-    public void SetHp(float _hp) { hp = _hp; }
+    public int GetTeam() { return team; }
+	public void SetHp(float _hp) { hp = _hp; }
 
     void Start()
     {

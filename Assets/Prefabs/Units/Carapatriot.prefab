@@ -373,7 +373,7 @@ GameObject:
   - 95: {fileID: 95000012349731526}
   - 54: {fileID: 54000013201158442}
   - 65: {fileID: 65000012084856448}
-  - 114: {fileID: 114000012812208796}
+  - 114: {fileID: 114000011157020872}
   m_Layer: 0
   m_Name: Carapatriot
   m_TagString: Untagged
@@ -1535,7 +1535,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000012812208796
+--- !u!114 &114000011157020872
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1543,9 +1543,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000013657425232}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8252bb59eb89a44eb6e4690dd11c020, type: 3}
+  m_Script: {fileID: 11500000, guid: 07a1a455338e4624f8a69a5476ac9d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  team: 0
-  hp: 0
-  enemyBase: {fileID: 0}

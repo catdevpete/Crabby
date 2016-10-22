@@ -61,7 +61,7 @@ public class BaseCrab : MonoBehaviour
 
     void OnCollisionEnter(Collision _col)
     {
-        if (_col.gameObject.GetComponent<CrabNest>() != null)
+        if (_col.gameObject.GetComponent<CrabNest>() != null && _col.gameObject.GetComponent<CrabNest>().GetTeam() != team)
         {
             _col.gameObject.GetComponent<CrabNest>().SetHp(_col.gameObject.GetComponent<CrabNest>().GetHp() - 1);
             Destroy(gameObject);

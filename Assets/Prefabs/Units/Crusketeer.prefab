@@ -169,7 +169,7 @@ GameObject:
   - 95: {fileID: 95000014033884304}
   - 54: {fileID: 54000011803346134}
   - 65: {fileID: 65000012851161656}
-  - 114: {fileID: 114000013319678318}
+  - 114: {fileID: 114000010003760092}
   m_Layer: 0
   m_Name: Crusketeer
   m_TagString: Untagged
@@ -1535,7 +1535,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000013319678318
+--- !u!114 &114000010003760092
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1543,6 +1543,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011169708088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8252bb59eb89a44eb6e4690dd11c020, type: 3}
+  m_Script: {fileID: 11500000, guid: d47abccb4faddff468bf56651c11a84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
