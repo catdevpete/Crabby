@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CrabNest : MonoBehaviour
 {
+    [SerializeField]
     int team;
     float hp;
 
