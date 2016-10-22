@@ -10,13 +10,35 @@ public class SpawnCrab : MonoBehaviour
     [SerializeField]
     GameObject[] crabPrefabs;
 
-    public void SpawnPlayerCrab(int _i)
+    bool canSpawn;
+
+    void Start()
     {
-        GameObject crab = Instantiate(crabPrefabs[_i], playerBase.position + Vector3.right, Quaternion.identity) as GameObject;
+        canSpawn = true;
     }
 
-    public void SpawnEnemyCrab(int _i)
+    public void SpawnPlayerCrab(int _i, float _t)
     {
-        GameObject crab = Instantiate(crabPrefabs[_i], enemyBase.position + Vector3.left, Quaternion.identity) as GameObject;
+        if (canSpawn)
+        {
+            GameObject crab = Instantiate(crabPrefabs[_i], playerBase.position + Vector3.right, Quaternion.identity) as GameObject;
+            StartCoroutine(SpawnCycle(_t));
+        }
+    }
+
+    public void SpawnEnemyCrab(int _i, float _t)
+    {
+        if (canSpawn)
+        {
+            GameObject crab = Instantiate(crabPrefabs[_i], enemyBase.position + Vector3.left, Quaternion.identity) as GameObject;
+            StartCoroutine(SpawnCycle(_t));
+        }
+    }
+
+    IEnumerator SpawnCycle(float _t)
+    {
+        canSpawn = false;
+        yield return new WaitForSeconds(_t);
+        canSpawn = true;
     }
 }
