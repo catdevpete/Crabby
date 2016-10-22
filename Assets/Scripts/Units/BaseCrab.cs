@@ -35,7 +35,9 @@ public class BaseCrab : MonoBehaviour
         aS = 1;
         range = 2;
         cState = State.MOVE;
-    }
+		SetHp(2);
+
+	}
 
     void Update()
     {
