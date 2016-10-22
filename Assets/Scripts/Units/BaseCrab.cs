@@ -70,7 +70,7 @@ public class BaseCrab : MonoBehaviour
 
     void Move()
     {
-        transform.position = Vector3.MoveTowards(transform.position, enemyBase.transform.position, mS * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, enemyBase.transform.position, mS * Time.deltaTime / 10);
     }
 
     void Attack()
@@ -91,7 +91,8 @@ public class BaseCrab : MonoBehaviour
     {
         if (hp <= 0)
         {
-            Destroy(gameObject);
+			Debug.Log("KO'ed");
+			Destroy(gameObject);
         }
     }
 

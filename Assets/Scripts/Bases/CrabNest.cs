@@ -5,17 +5,20 @@ public class CrabNest : MonoBehaviour
 {
     [SerializeField]
     int team;
-    float hp;
+
+	[SerializeField]
+	float hp;
 
     public float GetHp() { return hp; }
-
-    public void SetTeam(int _team) { team = _team; }
-    public int GetTeam() { return team; }
 	public void SetHp(float _hp) { hp = _hp; }
+
+	public int GetTeam() { return team; }
+	public void SetTeam(int _team) { team = _team; }
 
     void Start()
     {
-        hp = 1;
+		if (hp < 0)
+			hp = 1;
     }
 
     void Update()

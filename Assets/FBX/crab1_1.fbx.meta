@@ -1,0 +1,834 @@
+fileFormatVersion: 2
+guid: acbe638b56d669d4dad8479bbbf659c0
+timeCreated: 1477112260
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: arm_L_geo
+    100002: arm_R_geo
+    100004: Body_geo
+    100006: boot_L_A_geo
+    100008: boot_L_B_geo
+    100010: boot_L_C_geo
+    100012: boot_R_A_geo
+    100014: boot_R_B_geo
+    100016: boot_R_C_geo
+    100018: claw_L_geo
+    100020: claw_R_geo
+    100022: Claws_group
+    100024: ClawsPivot_group
+    100026: //RootNode
+    100028: eye_L_geo
+    100030: eye_R_geo
+    100032: Eyes_group
+    100034: hats_group
+    100036: iris_L_geo
+    100038: iris_R_geo
+    100040: leg_L_A_geo
+    100042: leg_L_B_geo
+    100044: leg_L_C_geo
+    100046: leg_R_A_geo
+    100048: leg_R_B_geo
+    100050: leg_R_C_geo
+    100052: Legs_group
+    100054: legs_L_group
+    100056: legs_R_group
+    100058: monocle_geo
+    100060: moustache_L_geo
+    100062: moustache_R_geo
+    100064: pipe_geo
+    100066: star_geo
+    100068: topHat_geo
+    100070: ushanka_geo
+    400000: arm_L_geo
+    400002: arm_R_geo
+    400004: Body_geo
+    400006: boot_L_A_geo
+    400008: boot_L_B_geo
+    400010: boot_L_C_geo
+    400012: boot_R_A_geo
+    400014: boot_R_B_geo
+    400016: boot_R_C_geo
+    400018: claw_L_geo
+    400020: claw_R_geo
+    400022: Claws_group
+    400024: ClawsPivot_group
+    400026: //RootNode
+    400028: eye_L_geo
+    400030: eye_R_geo
+    400032: Eyes_group
+    400034: hats_group
+    400036: iris_L_geo
+    400038: iris_R_geo
+    400040: leg_L_A_geo
+    400042: leg_L_B_geo
+    400044: leg_L_C_geo
+    400046: leg_R_A_geo
+    400048: leg_R_B_geo
+    400050: leg_R_C_geo
+    400052: Legs_group
+    400054: legs_L_group
+    400056: legs_R_group
+    400058: monocle_geo
+    400060: moustache_L_geo
+    400062: moustache_R_geo
+    400064: pipe_geo
+    400066: star_geo
+    400068: topHat_geo
+    400070: ushanka_geo
+    2300000: arm_L_geo
+    2300002: arm_R_geo
+    2300004: Body_geo
+    2300006: boot_L_A_geo
+    2300008: boot_L_B_geo
+    2300010: boot_L_C_geo
+    2300012: boot_R_A_geo
+    2300014: boot_R_B_geo
+    2300016: boot_R_C_geo
+    2300018: claw_L_geo
+    2300020: claw_R_geo
+    2300022: eye_L_geo
+    2300024: eye_R_geo
+    2300026: iris_L_geo
+    2300028: iris_R_geo
+    2300030: leg_L_A_geo
+    2300032: leg_L_B_geo
+    2300034: leg_L_C_geo
+    2300036: leg_R_A_geo
+    2300038: leg_R_B_geo
+    2300040: leg_R_C_geo
+    2300042: monocle_geo
+    2300044: moustache_L_geo
+    2300046: moustache_R_geo
+    2300048: pipe_geo
+    2300050: star_geo
+    2300052: topHat_geo
+    2300054: ushanka_geo
+    3300000: arm_L_geo
+    3300002: arm_R_geo
+    3300004: Body_geo
+    3300006: boot_L_A_geo
+    3300008: boot_L_B_geo
+    3300010: boot_L_C_geo
+    3300012: boot_R_A_geo
+    3300014: boot_R_B_geo
+    3300016: boot_R_C_geo
+    3300018: claw_L_geo
+    3300020: claw_R_geo
+    3300022: eye_L_geo
+    3300024: eye_R_geo
+    3300026: iris_L_geo
+    3300028: iris_R_geo
+    3300030: leg_L_A_geo
+    3300032: leg_L_B_geo
+    3300034: leg_L_C_geo
+    3300036: leg_R_A_geo
+    3300038: leg_R_B_geo
+    3300040: leg_R_C_geo
+    3300042: monocle_geo
+    3300044: moustache_L_geo
+    3300046: moustache_R_geo
+    3300048: pipe_geo
+    3300050: star_geo
+    3300052: topHat_geo
+    3300054: ushanka_geo
+    4300000: Body_geo
+    4300002: eye_L_geo
+    4300004: iris_L_geo
+    4300006: eye_R_geo
+    4300008: iris_R_geo
+    4300010: monocle_geo
+    4300012: moustache_L_geo
+    4300014: moustache_R_geo
+    4300016: pipe_geo
+    4300018: topHat_geo
+    4300020: ushanka_geo
+    4300022: star_geo
+    4300024: leg_R_A_geo
+    4300026: boot_R_A_geo
+    4300028: leg_R_B_geo
+    4300030: boot_R_B_geo
+    4300032: leg_R_C_geo
+    4300034: boot_R_C_geo
+    4300036: leg_L_A_geo
+    4300038: boot_L_A_geo
+    4300040: leg_L_B_geo
+    4300042: boot_L_B_geo
+    4300044: leg_L_C_geo
+    4300046: boot_L_C_geo
+    4300048: arm_L_geo
+    4300050: claw_L_geo
+    4300052: arm_R_geo
+    4300054: claw_R_geo
+    7400000: Walk
+    7400002: Strafe
+    7400004: Pinch
+    7400006: Slam
+    7400008: Toss
+    7400010: Idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body_geo
+        weight: 1
+      - path: Body_geo/Eyes_group
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo/iris_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/iris_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/monocle_geo
+        weight: 1
+      - path: Body_geo/hats_group
+        weight: 1
+      - path: Body_geo/hats_group/topHat_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo/star_geo
+        weight: 1
+      - path: Body_geo/moustache_L_geo
+        weight: 1
+      - path: Body_geo/moustache_R_geo
+        weight: 1
+      - path: Body_geo/pipe_geo
+        weight: 1
+      - path: Claws_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo/claw_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo/claw_R_geo
+        weight: 1
+      - path: Legs_group
+        weight: 1
+      - path: Legs_group/legs_L_group
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo/boot_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo/boot_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo/boot_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo/boot_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo/boot_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo/boot_R_C_geo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Strafe
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body_geo
+        weight: 1
+      - path: Body_geo/Eyes_group
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo/iris_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/iris_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/monocle_geo
+        weight: 1
+      - path: Body_geo/hats_group
+        weight: 1
+      - path: Body_geo/hats_group/topHat_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo/star_geo
+        weight: 1
+      - path: Body_geo/moustache_L_geo
+        weight: 1
+      - path: Body_geo/moustache_R_geo
+        weight: 1
+      - path: Body_geo/pipe_geo
+        weight: 1
+      - path: Claws_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo/claw_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo/claw_R_geo
+        weight: 1
+      - path: Legs_group
+        weight: 1
+      - path: Legs_group/legs_L_group
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo/boot_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo/boot_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo/boot_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo/boot_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo/boot_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo/boot_R_C_geo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Pinch
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body_geo
+        weight: 1
+      - path: Body_geo/Eyes_group
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo/iris_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/iris_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/monocle_geo
+        weight: 1
+      - path: Body_geo/hats_group
+        weight: 1
+      - path: Body_geo/hats_group/topHat_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo/star_geo
+        weight: 1
+      - path: Body_geo/moustache_L_geo
+        weight: 1
+      - path: Body_geo/moustache_R_geo
+        weight: 1
+      - path: Body_geo/pipe_geo
+        weight: 1
+      - path: Claws_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo/claw_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo/claw_R_geo
+        weight: 1
+      - path: Legs_group
+        weight: 1
+      - path: Legs_group/legs_L_group
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo/boot_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo/boot_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo/boot_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo/boot_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo/boot_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo/boot_R_C_geo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Slam
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 125
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body_geo
+        weight: 1
+      - path: Body_geo/Eyes_group
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo/iris_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/iris_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/monocle_geo
+        weight: 1
+      - path: Body_geo/hats_group
+        weight: 1
+      - path: Body_geo/hats_group/topHat_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo/star_geo
+        weight: 1
+      - path: Body_geo/moustache_L_geo
+        weight: 1
+      - path: Body_geo/moustache_R_geo
+        weight: 1
+      - path: Body_geo/pipe_geo
+        weight: 1
+      - path: Claws_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo/claw_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo/claw_R_geo
+        weight: 1
+      - path: Legs_group
+        weight: 1
+      - path: Legs_group/legs_L_group
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo/boot_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo/boot_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo/boot_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo/boot_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo/boot_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo/boot_R_C_geo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Toss
+      takeName: Take 001
+      firstFrame: 130
+      lastFrame: 164
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body_geo
+        weight: 1
+      - path: Body_geo/Eyes_group
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo/iris_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/iris_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/monocle_geo
+        weight: 1
+      - path: Body_geo/hats_group
+        weight: 1
+      - path: Body_geo/hats_group/topHat_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo/star_geo
+        weight: 1
+      - path: Body_geo/moustache_L_geo
+        weight: 1
+      - path: Body_geo/moustache_R_geo
+        weight: 1
+      - path: Body_geo/pipe_geo
+        weight: 1
+      - path: Claws_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo/claw_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo/claw_R_geo
+        weight: 1
+      - path: Legs_group
+        weight: 1
+      - path: Legs_group/legs_L_group
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo/boot_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo/boot_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo/boot_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo/boot_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo/boot_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo/boot_R_C_geo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 22
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body_geo
+        weight: 1
+      - path: Body_geo/Eyes_group
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_L_geo/iris_L_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/iris_R_geo
+        weight: 1
+      - path: Body_geo/Eyes_group/eye_R_geo/monocle_geo
+        weight: 1
+      - path: Body_geo/hats_group
+        weight: 1
+      - path: Body_geo/hats_group/topHat_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo
+        weight: 1
+      - path: Body_geo/hats_group/ushanka_geo/star_geo
+        weight: 1
+      - path: Body_geo/moustache_L_geo
+        weight: 1
+      - path: Body_geo/moustache_R_geo
+        weight: 1
+      - path: Body_geo/pipe_geo
+        weight: 1
+      - path: Claws_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_L_geo/claw_L_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo
+        weight: 1
+      - path: Claws_group/ClawsPivot_group/arm_R_geo/claw_R_geo
+        weight: 1
+      - path: Legs_group
+        weight: 1
+      - path: Legs_group/legs_L_group
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_A_geo/boot_L_A_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_B_geo/boot_L_B_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_L_group/leg_L_C_geo/boot_L_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_A_geo/boot_R_A_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_B_geo/boot_R_B_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo
+        weight: 1
+      - path: Legs_group/legs_R_group/leg_R_C_geo/boot_R_C_geo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

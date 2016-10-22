@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
+using System.Linq;
 using System.Collections;
 
 public class CrabWand : MonoBehaviour
 {
+	public Transform tip;
 	SteamVR_TrackedObject trackedObj;
 	SpawnCrab spawnCrab;
 
 	void Awake()
 	{
 		trackedObj = GetComponent<SteamVR_TrackedObject>();
-		spawnCrab = FindObjectOfType<SpawnCrab>();
+		spawnCrab = GetComponent<SpawnCrab>();
 	}
 
 	// Update is called once per frame
@@ -17,17 +19,25 @@ public class CrabWand : MonoBehaviour
 	{
 		var device = SteamVR_Controller.Input((int)trackedObj.index);
 
-		if (device.GetTouchDown(SteamVR_Controller.ButtonMask.ApplicationMenu))
+		if (device.GetPressDown(SteamVR_Controller.ButtonMask.ApplicationMenu))
 		{
 			Time.timeScale = Time.timeScale == 1 ? 0 : 1;
 		}
-	}
 
-	void OnCollisionEnter(Collision collision)
-	{
-		if (collision.gameObject.GetComponent<CrabNest>())
+		Collider[] colliders;
+		if ((colliders = Physics.OverlapSphere(tip.position, 0.5f)).Length > 0)
 		{
-			spawnCrab.SpawnPlayerCrab(0, 5);
+			colliders = colliders.Where(i => i.GetComponent<CrabUnitButton>()).OrderBy(i => (i.transform.position - tip.position).magnitude).ToArray();
+
+			if (colliders.Length > 0)
+			{
+				CrabUnitButton button = colliders[0].GetComponent<CrabUnitButton>();
+				
+				if (button && device.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
+				{
+					spawnCrab.SpawnPlayerCrab(button.UnitIndex, 5);
+				}
+			}
 		}
 	}
 }
