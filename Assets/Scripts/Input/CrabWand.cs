@@ -4,10 +4,12 @@ using System.Collections;
 public class CrabWand : MonoBehaviour
 {
 	SteamVR_TrackedObject trackedObj;
+	SpawnCrab spawnCrab;
 
 	void Awake()
 	{
 		trackedObj = GetComponent<SteamVR_TrackedObject>();
+		spawnCrab = FindObjectOfType<SpawnCrab>();
 	}
 
 	// Update is called once per frame
@@ -23,6 +25,8 @@ public class CrabWand : MonoBehaviour
 
 	void OnCollisionEnter(Collision collision)
 	{
+		if (collision.gameObject.GetComponent<BaseCrab>())
+			spawnCrab.SpawnPlayerCrab(0);
 		/*
 		if (collision.gameObject.tag == "base")
 		{
