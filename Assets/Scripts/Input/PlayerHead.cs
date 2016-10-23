@@ -7,8 +7,11 @@ public class PlayerHead : MonoBehaviour
 	public WinLose winLose;
 	public float hp = 10;
 
+    AudioSource crunch;
+
 	void Start()
 	{
+        crunch = GetComponent<AudioSource>();
 		winLose = FindObjectOfType<WinLose>();
 		StartCoroutine(CheckHealth());
 	}
@@ -58,6 +61,7 @@ public class PlayerHead : MonoBehaviour
 		{
 			claw.KillPrey();
 			StartCoroutine(Growth());
+            crunch.Play();
 		}
 	}
 
