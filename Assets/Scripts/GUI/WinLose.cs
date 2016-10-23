@@ -33,23 +33,24 @@ public class WinLose : MonoBehaviour
         }
     }
 
+    public State GetState() { return state; }
     public void SetState(State _state) { state = _state; }
 
-    void Win()
+	void Win()
     {
         canvas.gameObject.SetActive(true);
-        text.text = "You win!";
+        text.text = "You Win!";
     }
 
     void Lose()
     {
         canvas.gameObject.SetActive(true);
-        text.text = "You lose!";
+        text.text = "You Lose!";
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("MainPete2");
         canvas.gameObject.SetActive(false);
     }
 }

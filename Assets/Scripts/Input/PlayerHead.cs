@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Linq;
 using System.Collections;
 
 public class PlayerHead : MonoBehaviour
@@ -34,6 +35,19 @@ public class PlayerHead : MonoBehaviour
 	void Lose()
 	{
 		winLose.SetState(WinLose.State.LOSE);
+
+		CrabClaw[] claws = FindObjectsOfType<CrabClaw>();
+		Transform[] clawObjects = claws.Select(i => i.clawTransform).ToArray();
+
+		foreach (var item in claws)
+		{
+			item.enabled = false;
+		}
+
+		foreach (var item in clawObjects)
+		{
+			item.gameObject.SetActive(false);
+		}
 	}
 
 	void OnTriggerEnter(Collider collider)

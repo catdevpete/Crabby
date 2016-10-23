@@ -14,11 +14,9 @@ public class CrabClaw : MonoBehaviour
 	private SteamVR_TrackedObject trackedObj;
 	private FixedJoint joint;
 	private bool open;
-
-	[SerializeField]
-	private Rigidbody clawPhysics;
-	[SerializeField]
-	private Transform clawTransform;
+	
+	public Rigidbody clawPhysics;
+	public Transform clawTransform;
 
 	[SerializeField]
 	private float _paddleMaxSpeed = 350f;
