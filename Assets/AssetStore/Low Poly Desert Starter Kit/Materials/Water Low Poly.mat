@@ -72,7 +72,7 @@ Material:
     m_Floats:
     - first:
         name: _Amount
-      second: 0.45
+      second: 0.774
     - first:
         name: _BumpScale
       second: 1
@@ -87,7 +87,7 @@ Material:
       second: 0
     - first:
         name: _Glossiness
-      second: 0.8
+      second: 1
     - first:
         name: _Metallic
       second: 0

@@ -43,6 +43,11 @@ public class CrabClaw : MonoBehaviour
 	{
 		var device = SteamVR_Controller.Input((int)trackedObj.index);
 
+		if (device.GetPressDown(SteamVR_Controller.ButtonMask.ApplicationMenu))
+		{
+			Time.timeScale = Time.timeScale == 1 ? 0 : 1;
+		}
+
 		if (device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
 		{
 			open = false;
@@ -68,7 +73,7 @@ public class CrabClaw : MonoBehaviour
 		Collider[] colliders;
 		if ((colliders = Physics.OverlapSphere(attachPoint.position, 0.05f)).Length > 0)
 		{
-			colliders = colliders.Where(i => i.tag == "Edible").OrderBy(i => (i.transform.position - attachPoint.position).magnitude).ToArray();
+			colliders = colliders.Where(i => i.tag == "RED" || i.tag == "GREEN" || i.tag == "Edible").OrderBy(i => (i.transform.position - attachPoint.position).magnitude).ToArray();
 
 			if (colliders.Length > 0)
 			{
@@ -84,6 +89,15 @@ public class CrabClaw : MonoBehaviour
 
 		if (prey && joint == null && device.GetTouchDown(SteamVR_Controller.ButtonMask.Trigger))
 		{
+			if (prey.GetComponent<NavMeshAgent>())
+			{
+				prey.GetComponent<CrabOutfitScript>().enabled = false;
+				prey.GetComponent<NavMeshAgent>().enabled = false;
+				prey.GetComponent<Rigidbody>().isKinematic = false;
+				prey.GetComponent<Rigidbody>().useGravity = true;
+				prey.tag = "Edible";
+			}
+
 			var go = prey.gameObject;
 
 			joint = go.AddComponent<FixedJoint>();

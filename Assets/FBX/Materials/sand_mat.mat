@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: carapace_mat
+  m_Name: sand_mat
   m_Shader: {fileID: 4800000, guid: 9271e864ef20504479d70527f1b73721, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
@@ -93,7 +93,7 @@ Material:
       second: 1
     - first:
         name: _Metallic
-      second: 0
+      second: 1
     - first:
         name: _Mode
       second: 0
@@ -121,7 +121,7 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 0.2401, b: 0.098, a: 1}
+      second: {r: 0.895, g: 0.5984825, b: 0.43855, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
