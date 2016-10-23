@@ -23,7 +23,7 @@ public class ClamScript : MonoBehaviour
         {
             HandleDeath();
             Spawn();
-            hpBar.transform.localScale = new Vector3(1, hp / 100, 1);
+            hpBar.transform.localScale = new Vector3(1, hp / 10, 1);
         }
 	}
 
