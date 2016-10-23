@@ -1175,6 +1175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winLose: {fileID: 575623105}
   hp: 50
+  gib: {fileID: 1000011043002712, guid: edc529a7725f29043b3478d6d716259f, type: 2}
+  blood: {fileID: 1000013672066080, guid: 2e567cd4ebb93654ba03fc5ec2b64cba, type: 2}
 --- !u!114 &575623105
 MonoBehaviour:
   m_ObjectHideFlags: 0

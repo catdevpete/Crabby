@@ -6,6 +6,7 @@ public class PlayerHead : MonoBehaviour
 {
 	public WinLose winLose;
 	public float hp = 10;
+    public GameObject gib, blood;
 
     AudioSource crunch;
 
@@ -62,7 +63,9 @@ public class PlayerHead : MonoBehaviour
 			claw.KillPrey();
 			StartCoroutine(Growth());
             crunch.Play();
-		}
+            Destroy(Instantiate(gib, transform.position, Quaternion.identity), gib.GetComponent<ParticleSystem>().startLifetime);
+            Destroy(Instantiate(blood, transform.position, Quaternion.identity), blood.GetComponent<ParticleSystem>().startLifetime);
+        }
 	}
 
 	IEnumerator Growth()
