@@ -17,7 +17,7 @@ public class PlayerHead : MonoBehaviour
 	IEnumerator Growth()
 	{
 		Vector3 origSize = transform.root.localScale;
-		Vector3 newSize = transform.root.localScale + Vector3.one * 0.1f;
+		Vector3 newSize = transform.root.localScale + Vector3.one * 0.25f;
 
 		for (float i = 0; i < 1; i += Time.deltaTime)
 		{

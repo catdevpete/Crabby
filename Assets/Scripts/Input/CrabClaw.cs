@@ -11,9 +11,28 @@ public class CrabClaw : MonoBehaviour
 	public Transform openPincerRot;
 	public Transform closedPincerRot;
 
-	SteamVR_TrackedObject trackedObj;
-	FixedJoint joint;
-	bool open;
+	private SteamVR_TrackedObject trackedObj;
+	private FixedJoint joint;
+	private bool open;
+
+	[SerializeField]
+	private Rigidbody clawPhysics;
+	[SerializeField]
+	private Transform clawTransform;
+
+	[SerializeField]
+	private float _paddleMaxSpeed = 350f;
+	public float PaddleMaxSpeed
+	{
+		get	{ return _paddleMaxSpeed; }
+	}
+
+	[SerializeField]
+	private float _paddleMaxRotationSpeed = 10f;
+	public float PaddleMaxRotationSpeed
+	{
+		get	{ return _paddleMaxRotationSpeed; }
+	}
 
 	void Awake()
 	{
@@ -96,6 +115,9 @@ public class CrabClaw : MonoBehaviour
 
 			rigidbody.maxAngularVelocity = rigidbody.angularVelocity.magnitude;
 		}
+
+		SetPaddlePositionToController();
+		SetPaddleRotationToController();
 	}
 
 	public void KillPrey()
@@ -104,5 +126,27 @@ public class CrabClaw : MonoBehaviour
 		joint = null;
 		Destroy(prey.gameObject);
 		prey = null;
+	}
+
+	private void SetPaddlePositionToController()
+	{
+		if ((clawTransform.position - transform.position).magnitude > 0.35f)
+		{
+			clawTransform.position = transform.position;
+			clawPhysics.velocity = Vector3.zero;
+		}
+		else if ((clawTransform.position - transform.position).magnitude > 0.001f)
+			clawPhysics.velocity = (transform.position - clawTransform.position) * PaddleMaxSpeed * Mathf.Clamp((clawTransform.position - transform.position).magnitude, 0.1f, 1f);
+	}
+
+	private void SetPaddleRotationToController()
+	{
+		if (PaddleAngularDifference() > 0.1f)
+			clawTransform.rotation = Quaternion.RotateTowards(clawTransform.rotation, transform.rotation, PaddleMaxRotationSpeed);
+	}
+
+	private float PaddleAngularDifference()
+	{
+		return Quaternion.Angle(clawTransform.rotation, transform.rotation);
 	}
 }
