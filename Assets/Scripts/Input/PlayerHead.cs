@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerHead : MonoBehaviour
 {
+	public float hp;
+
 	void OnTriggerEnter(Collider collider)
 	{
 		CrabClaw claw = collider.GetComponent<CrabClaw>();
@@ -24,5 +26,10 @@ public class PlayerHead : MonoBehaviour
 			transform.root.localScale = Vector3.Lerp(origSize, newSize, Mathf.SmoothStep(0, 1, i));
 			yield return null;
 		}
+	}
+
+	public void Hit(float damage)
+	{
+		hp -= damage;
 	}
 }

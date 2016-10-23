@@ -37,6 +37,7 @@ public class ClamScript : MonoBehaviour
         if (hp <= 0)
         {
             isDead = true;
+            Destroy(hpBar);
             pearl.SetActive(true);
             anim.SetBool("isCracked", true);
         }

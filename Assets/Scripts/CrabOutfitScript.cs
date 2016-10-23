@@ -8,7 +8,7 @@ public class CrabOutfitScript : MonoBehaviour
     public GameObject[] augs;
     public float hp = 10;
     public Transform target, goal;
-    public GameObject corpse;
+    public GameObject projectile;
 
     Animator anim;
     float power = 2;
@@ -17,10 +17,10 @@ public class CrabOutfitScript : MonoBehaviour
     // IT'S START YO
     void Start ()
     {
-        HandleType();
         Dress();
+        HandleType();
 
-		anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
 
         target = goal;
 
@@ -31,19 +31,16 @@ public class CrabOutfitScript : MonoBehaviour
     // Makes the crabs attack each other and the enemy clam
     void OnTriggerStay(Collider col)
     {
-        if((tag == "RED" && col.tag == "GREEN") || (tag == "GREEN" && col.tag == "RED"))
+        if((tag == "REDCRAB" && col.tag == "GREEN") || (tag == "GREENCRAB" && col.tag == "RED"))
         {
             transform.LookAt(col.transform);
             Attack();
-
-			if (col.transform.parent && col.transform.parent.GetComponent<CrabOutfitScript>())
-				col.transform.parent.GetComponent<CrabOutfitScript>().Hit(power * Time.deltaTime);
-
+            col.transform.parent.GetComponent<CrabOutfitScript>().Hit(power * Time.deltaTime);
             target = col.transform;
             GetComponent<NavMeshAgent>().SetDestination(transform.position);
         }
 
-        if ((tag == "RED" && col.tag == "GREENCLAM") || (tag == "GREEN" && col.tag == "REDCLAM"))
+        if ((tag == "REDCRAB" && col.tag == "GREENCLAM") || (tag == "GREENCRAB" && col.tag == "REDCLAM"))
         {
             target = col.transform;
             transform.LookAt(target);
@@ -51,13 +48,22 @@ public class CrabOutfitScript : MonoBehaviour
             col.GetComponent<ClamScript>().Hit(power * Time.deltaTime);
             GetComponent<NavMeshAgent>().SetDestination(transform.position);
         }
-    }
+
+		if (col.tag == "Player")
+        {
+			target = col.transform;
+			transform.LookAt(target);
+			Attack();
+			col.transform.parent.GetComponent<PlayerHead>().Hit(power * Time.deltaTime);
+			GetComponent<NavMeshAgent>().SetDestination(transform.position);
+		}
+	}
 
     // IT'S ONTRIGGER EXIT YO
     // Makes the crabs start moving again if their combatant wanders off
     void OnTriggerExit(Collider col)
     {
-        if ((tag == "RED" && col.tag == "GREEN") || (tag == "GREEN" && col.tag == "RED"))
+        if ((tag == "RED" && col.tag == "GREEN") || (tag == "GREEN" && col.tag == "RED") || col.tag == "Player")
         {
             if(target != null)
                 GetComponent<NavMeshAgent>().SetDestination(target.position);
@@ -99,7 +105,10 @@ public class CrabOutfitScript : MonoBehaviour
         if(isHeavy)
             anim.SetBool("isSlamming", true);
         else if(isRanged)
+        {
+            projectile.SetActive(true);
             anim.SetBool("isTossing", true);
+        }
         else
             anim.SetBool("isPinching", true);
     }
@@ -110,7 +119,10 @@ public class CrabOutfitScript : MonoBehaviour
         if (isHeavy)
             anim.SetBool("isSlamming", false);
         else if (isRanged)
+        {
+            projectile.SetActive(false);
             anim.SetBool("isTossing", false);
+        }
         else
             anim.SetBool("isPinching", false);
     }
@@ -145,14 +157,14 @@ public class CrabOutfitScript : MonoBehaviour
             hp = 15;
             power = 3;
             GetComponent<NavMeshAgent>().speed = 0.3f;
-            GetComponent<NavMeshAgent>().avoidancePriority = 99;
+            GetComponent<NavMeshAgent>().avoidancePriority = 1;
         }
         if (isRanged == true)
         {
             GetComponent<BoxCollider>().size = new Vector3(0.3f, 0.3f, 1);
             GetComponent<BoxCollider>().center = new Vector3(0, 0, 0.4f);
 
-            GetComponent<NavMeshAgent>().avoidancePriority = 1;
+            GetComponent<NavMeshAgent>().avoidancePriority = 99;
         }
     }
 
