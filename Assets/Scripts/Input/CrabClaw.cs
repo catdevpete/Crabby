@@ -73,7 +73,7 @@ public class CrabClaw : MonoBehaviour
 		Collider[] colliders;
 		if ((colliders = Physics.OverlapSphere(attachPoint.position, 0.05f)).Length > 0)
 		{
-			colliders = colliders.Where(i => i.tag == "RED" || i.tag == "GREEN" || i.tag == "Edible").OrderBy(i => (i.transform.position - attachPoint.position).magnitude).ToArray();
+			colliders = colliders.Where(i => i.tag == "REDCRAB" || i.tag == "GREENCRAB" || i.tag == "Edible").OrderBy(i => (i.transform.position - attachPoint.position).magnitude).ToArray();
 
 			if (colliders.Length > 0)
 			{

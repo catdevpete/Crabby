@@ -48,13 +48,22 @@ public class CrabOutfitScript : MonoBehaviour
             col.GetComponent<ClamScript>().Hit(power * Time.deltaTime);
             GetComponent<NavMeshAgent>().SetDestination(transform.position);
         }
-    }
+
+		if (col.tag == "Player")
+        {
+			target = col.transform;
+			transform.LookAt(target);
+			Attack();
+			col.transform.parent.GetComponent<PlayerHead>().Hit(power * Time.deltaTime);
+			GetComponent<NavMeshAgent>().SetDestination(transform.position);
+		}
+	}
 
     // IT'S ONTRIGGER EXIT YO
     // Makes the crabs start moving again if their combatant wanders off
     void OnTriggerExit(Collider col)
     {
-        if ((tag == "RED" && col.tag == "GREEN") || (tag == "GREEN" && col.tag == "RED"))
+        if ((tag == "RED" && col.tag == "GREEN") || (tag == "GREEN" && col.tag == "RED") || col.tag == "Player")
         {
             if(target != null)
                 GetComponent<NavMeshAgent>().SetDestination(target.position);
