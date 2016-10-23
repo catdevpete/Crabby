@@ -3,13 +3,44 @@ using System.Collections;
 
 public class PlayerHead : MonoBehaviour
 {
-	public float hp;
+	public WinLose winLose;
+	public float hp = 10;
+
+	void Start()
+	{
+		winLose = FindObjectOfType<WinLose>();
+		StartCoroutine(CheckHealth());
+	}
+
+	IEnumerator CheckHealth()
+	{
+		while (true)
+		{
+			if (hp <= 0)
+			{
+				Lose();
+				yield break;
+			}
+
+			yield return null;
+		}
+	}
+
+	public void Win()
+	{
+		winLose.SetState(WinLose.State.WIN);
+	}
+
+	void Lose()
+	{
+		winLose.SetState(WinLose.State.LOSE);
+	}
 
 	void OnTriggerEnter(Collider collider)
 	{
 		CrabClaw claw = collider.GetComponent<CrabClaw>();
 
-		if (claw && claw.prey && claw.prey.tag == "Edible")
+		if (claw && claw.prey && claw.prey.tag == "Edible" && transform.localScale.x < 3)
 		{
 			claw.KillPrey();
 			StartCoroutine(Growth());
@@ -24,6 +55,7 @@ public class PlayerHead : MonoBehaviour
 		for (float i = 0; i < 1; i += Time.deltaTime)
 		{
 			transform.root.localScale = Vector3.Lerp(origSize, newSize, Mathf.SmoothStep(0, 1, i));
+			hp += 10;
 			yield return null;
 		}
 	}

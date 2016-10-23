@@ -136,6 +136,9 @@ public class CrabClaw : MonoBehaviour
 
 	public void KillPrey()
 	{
+		if (prey.name.ToLower().Contains("pearl"))
+			FindObjectOfType<PlayerHead>().Win();
+
 		Destroy(joint);
 		joint = null;
 		Destroy(prey.gameObject);

@@ -7,7 +7,7 @@ public class ClamScript : MonoBehaviour
     bool isDead = false;
     float t = 4;
 
-    public GameObject pearl, prefrab, enemyClam, hpBar, manager;
+    public GameObject pearl, prefrab, enemyClam, hpBar;
     public float hp = 100.0f;
     public Transform[] spawns;
 	// Use this for initialization
@@ -24,7 +24,6 @@ public class ClamScript : MonoBehaviour
             HandleDeath();
             Spawn();
             hpBar.transform.localScale = new Vector3(1, hp / 100, 1);
-            manager.GetComponent<WinLose>().SetState(WinLose.State.WIN);
         }
 	}
 
@@ -46,7 +45,7 @@ public class ClamScript : MonoBehaviour
     // Spawns new crabs
     void Spawn()
     {
-        t += Time.deltaTime * 5;
+        t += Time.deltaTime * 2;
         int i = Random.Range(0, spawns.Length);
         if(t >= 5)
         {
